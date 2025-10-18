@@ -1,58 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayoutCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/tvCounter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/number"
-            android:textAlignment="center"
-            android:textSize="60sp" android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnAddNumber"
-            android:layout_width="200dp" android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/add_number" />
-
-        <Button
-            android:id="@+id/btnResetNumber"
-            android:layout_width="200dp" android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/reset_number" />
-
-        <Button
-            android:id="@+id/btnSubtractNumber"
-            android:layout_width="200dp" android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/subtract_number" />
-
-    </LinearLayout>
-
     <TextView
-        android:id="@+id/tvHello"
+        android:id="@+id/tvCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/number"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnAddNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_number" />
+
+    <Button
+        android:id="@+id/btnResetNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/reset_number" />
+
+    <Button
+        android:id="@+id/btnSubtractNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/subtract_number" />
+
+</LinearLayout>

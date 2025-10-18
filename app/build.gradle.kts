@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.androidkotlinapp"
-        minSdk = 24
+        minSdk = 24  // <-- INI AKAN MEMPERBAIKI ERROR (karena 24 > 14)
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -33,10 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    // Fitur View Binding yang Anda tambahkan
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

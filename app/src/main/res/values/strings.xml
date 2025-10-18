@@ -2,7 +2,6 @@
     <string name="app_name">AndroidKotlinApp</string>
     <string name="number">0</string>
     <string name="add_number">Add Number</string>
-
     <string name="subtract_number">Subtract Number</string>
     <string name="reset_number">Reset Number</string>
 </resources>
