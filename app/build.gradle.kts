@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.androidkotlinapp"
+    namespace = "id.ac.smpn8bks.ardiansyah.androidkotlinapp"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.androidkotlinapp"
-        minSdk = 24  // <-- INI AKAN MEMPERBAIKI ERROR (karena 24 > 14)
+        applicationId = "id.ac.smpn8bks.ardiansyah.androidkotlinapp"
+        minSdk = 24
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -34,7 +34,6 @@ android {
         jvmTarget = "11"
     }
 
-    // Fitur View Binding yang Anda tambahkan
     buildFeatures {
         viewBinding = true
     }

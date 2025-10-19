@@ -1,13 +1,13 @@
-package com.example.androidkotlinapp
+package id.ac.smpn8bks.ardiansyah.androidkotlinapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-// Import kelas Binding yang dibuat otomatis
-import com.example.androidkotlinapp.databinding.ActivityMainBinding
+
+import id.ac.smpn8bks.ardiansyah.androidkotlinapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    // Deklarasikan SATU variabel binding
+    // Deklarasikan 1 variabel binding
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
